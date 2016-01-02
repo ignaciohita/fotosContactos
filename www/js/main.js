@@ -6,7 +6,7 @@ function seleccionarContacto() {
     navigator.contacts.pickContact(function (contactoSeleccionado) {
         if (contactoSeleccionado.photos && contactoSeleccionado.photos.length > 0) {
             contactoActual = contactoSeleccionado;
-            document.getElementById("fotoContacto").innerHTML = contactoSeleccionado.photos[0];
+            document.getElementById("fotoContacto").src = contactoSeleccionado.photos[0].value;
         } else {
             navigator.notification.alert("El contacto que has seleccionado no tiene foto");
         }
