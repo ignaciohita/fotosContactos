@@ -1,5 +1,4 @@
 var contactoActual;
-var contactoActual;
 
 function seleccionarContacto() {
     "use strict";
